@@ -1,0 +1,430 @@
+<!DOCTYPE>
+<html xmlns:og="http://ogp.me/ns#">
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bienwolf: Official Website</title>
+        <meta name="description" content="The official website of Bienwolf. Listen to demo tracks from Blasphemy Alley EP and find buying options here">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index,follow">
+        
+        <meta property="og:title" content="Bienwolf: Official Website" />
+		<meta property="og:description" content="The official website of Bienwolf. Listen to demo tracks from Blasphemy Alley EP and find buying options here" />
+		<meta property="og:site_name" content="Bienwolf" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="http://bienwolf.com/" />
+		<meta property="og:image" content="http://bienwolf.com/images/background-fill.jpg" />
+		<link rel="stylesheet" href="css/w3.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/eq.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Facebook Pixel Code -->
+		<script>
+		  !function(f,b,e,v,n,t,s)
+		  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		  n.queue=[];t=b.createElement(e);t.async=!0;
+		  t.src=v;s=b.getElementsByTagName(e)[0];
+		  s.parentNode.insertBefore(t,s)}(window, document,'script',
+		  'https://connect.facebook.net/en_US/fbevents.js');
+		  fbq('init', '196545074596714');
+		  fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		  src="https://www.facebook.com/tr?id=196545074596714&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+	</head>
+	<body>
+		<script>
+		  fbq('track', 'ViewContent');
+		</script>
+		<div id="loading" class="w3-container w3-center">
+			<img id="loading-image" src="images/preloader.svg" height="100" width="100" alt="Loading..." />
+		</div>
+		<div class="fullViewPortContainer w3-center">
+			<div class="albumTitle">BLASPHEMY<br/>ALLEY</div>
+		</div>
+		<audio controls="controls" id="audio_player" style="display: none;">
+			<source id="audio_player_src" src="" type="audio/mpeg" />
+		</audio>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+			</div>
+		</div>
+		<div class="fullViewPortContainer w3-center">
+			<div class="bluegradient">
+				<div class="w3-col w3-container leftspace">
+				</div>
+				<div class="w3-col w3-container midsection">
+					<div class="w3-container w3-half coverartsection">
+						<img class="w3-center coverart" src="images/coverArt.jpg">
+					</div>
+					<div class="w3-container w3-half trackplayersection">
+						<div class="w3-container trackplayer">
+							<table class="w3-table">
+								<tbody>
+									<tr>
+										<td class="titlesection">
+											<div class="bandtitle">BIENWOLF</div>
+											<hr>
+											<div class="playingtracktitle"><div class="playtracktext">Play Track</div></div>
+										</td>
+										<td class="visualization">
+											<div class="equalizer">
+												<span class="eq1 off"></span>
+												<span class="eq2 off"></span>
+												<span class="eq3 off"></span>
+												<span class="eq4 off"></span>
+											</div>						
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<table class="w3-table tracklist">
+							<tr>
+								<td class="tracknamecol">
+									<div id="vampaslore" class="inactive" onclick="playtrack(this);">
+										<img class="playpausebutton" src="images/Play_button.png"/>
+										<span class="tracktitle">Vampa's Lore</span>
+									</div>
+								</td>
+								<td class="lyricsbuttoncol">
+									<div class="lyricsbutton" onclick="showmodal(this,'vampaslorelyrics','lyricsbutton','lyricsactive');">
+										<strong>Lyrics</strong>
+									</div>
+									<div class="modalcontent" id="vampaslorelyrics">
+										<div>Vampa's Lore</div><p>I'll have the moren bite <br/>Cause I have no way around<br/>I am the sudden smite<br/>Cause I haven't been found<br/><br/>Name that thing that goes without a heart<br/>Funny I won't ever make that race so far<br/>Name that thing that goes without a heart<br/><br/>What if your end is behind you and happiness is your only foe<br/>What if your end is behind you and happiness is your only foe<br/>What if your end is behind you and happiness is your only foe<br/></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tracknamecol">
+									<div id="catch22" class="inactive" onclick="playtrack(this);">
+										<img class="playpausebutton" src="images/Play_button.png"/>
+										<span class="tracktitle">Catch 22</span>
+									</div>
+								</td>
+								<td class="lyricsbuttoncol">
+									<div class="lyricsbutton" onclick="showmodal(this,'catch22lyrics','lyricsbutton','lyricsactive');">
+										<strong>Lyrics</strong>
+									</div>
+									<div class="modalcontent" id="catch22lyrics">
+										<div>Catch 22</div><p>Drink in the tasteless pain for you'll live the future not the way you imagined<br/>Are you the one that I saw <br/>Are you the one that we know<br/>My fears combined would be less than yours<br/>If I were you and you were me<br/>Left behind like dust<br/>You gave me sweetest thing<br/>The shimmering skin and the burning red<br/>I'll never escape this life<br/>But if I do<br/>What if I do<br/><br/>Poison the infant as it sleeps<br/>Poison the old old men<br/>Poison the lights in your dreams<br/>Poison the nights in your life<br/>I see you turn in my mind<br/>I see you leap through the plague<br/><br/>Power's been mistaken<br/>Lives've been cluttered on the floor<br/><br/>A nocuous blow won't knock me down<br/>A spiteful heart won't lacerate me<br/></p>									
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tracknamecol">
+									<div id="masquerader" class="inactive" onclick="playtrack(this);">
+										<img class="playpausebutton" src="images/Play_button.png"/>
+										<span class="tracktitle">Masquerader</span>
+									</div>
+								</td>
+								<td class="lyricsbuttoncol">
+									<div class="lyricsbutton" onclick="showmodal(this,'masqueraderlyrics','lyricsbutton','lyricsactive');">
+										<strong>Lyrics</strong>
+									</div>
+									<div class="modalcontent" id="masqueraderlyrics">
+										<div>Masquerader</div><p>I won't survive the gloominess of this night<br/>The dagger's ready to kiss me goodbye<br/>Lovers are so useful<br/>Nobody loves them<br/>Masquerader<br/>Masquerader<br/>Masquerader<br/></p>									
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tracknamecol">
+									<div id="descent" class="inactive" onclick="playtrack(this);">
+										<img class="playpausebutton" src="images/Play_button.png"/>
+										<span class="tracktitle">Descent</span>
+									</div>
+								</td>
+								<td class="lyricsbuttoncol">
+									<div class="lyricsbutton" onclick="showmodal(this,'descentlyrics','lyricsbutton','lyricsactive');">
+										<strong>Lyrics</strong>
+									</div>
+									<div class="modalcontent" id="descentlyrics">
+										<div>Descent</div><p>Glistening secrets<br/>I wish these secrets were never washed<br/>We look through the glass<br/>And we look through the crowd<br/>You can fathom the burns <br/>But the heart says the trauma is yours<br/><br/>You're a mind that feels no age <br/>But you don't fight the cage<br/>You don't fight the cage<br/>Come dive with me<br/>To get rid of the things you dislike<br/>A silence that lights your heart <br/>But not your face<br/>Come dive with me <br/>To get rid of the things you dislike<br/></p>									
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tracknamecol">
+									<div id="simbelmyne" class="inactive" onclick="playtrack(this);">
+										<img class="playpausebutton" src="images/Play_button.png"/>
+										<span class="tracktitle">Simbelmyne</span>
+									</div>
+								</td>
+								<td class="lyricsbuttoncol">
+									<div class="lyricsbutton" onclick="showmodal(this,'simbelmyneyrics','lyricsbutton','lyricsactive');">
+										<strong>Lyrics</strong>
+									</div>
+									<div class="modalcontent" id="simbelmyneyrics">
+										<div>Simbelmyne</div><p>It takes a lot of pain walking uphill before you leap<br/>And it's hard to see the end even if it's close to you<br/>I'm behind the sun and all you see is a spot on the mound of dreams<br/>Father, I see the mirror and all I see I see is you<br/>I am what is left<br/>What is left in this world of you<br/><br/>Turn of the roads<br/>Bodies are lighter than our egos<br/>Turn of the roads<br/>Bodies are lighter than our egos<br/>As I turned <br/>I saw them fly<br/>I saw him lie<br/>I saw him lie<br/>He didn't cry<br/>He didn't cry<br/>I saw him lie<br/>I saw him lie<br/></p>									
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table class="buyalbumtable">
+							<tr>
+								<td>
+									<div class="storeiconlinkprimary">
+										<a title="Listen on Apple iTunes" target="_blank" href="https://music.apple.com/in/album/blasphemy-alley/1435926050?uo=4&amp;app=music&amp;ls=1&amp;ct=album_blasphemy-alley&amp;itscg=30200&amp;itsct=toolbox_linkbuilder" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 40px; height: 40px;"><img src="https://tools.applemediaservices.com/api/badges/app-icon-music/standard/en-us?size=83x83&h=9d37703298aad6648b9d2936daa89a98" alt="App Icon Apple Music" style="border-radius: 13px; width: 40px; height: 40px;"></a>
+									</div>
+								</td>
+								<td>
+									<div class="storeiconlinkprimary">
+										<a target="_blank" href="https://open.spotify.com/album/7nXdZ5uDrtO8pW6dxE7JNy">
+											<img alt="Listen on Spotify" title="Listen on Spotify" src="images/stores/spotify.svg">
+										</a>
+									</div>
+								</td>
+								<td>
+									<div class="storeiconlinkprimary">
+										<a target="_blank" href="https://music.youtube.com/channel/UC8yftun0NnUepYRSgR5HDlA">
+											<img alt="Listen on Youtube Music" title="Listen on Youtube Music" src="images/stores/youtube-music.svg">
+										</a>
+									</div>
+								</td>
+								
+								<td class="morebuyingoptions" onclick="showmodal(this,'storeslist','morebuyingoptions','morebuyingoptionsactive');">
+									Listen free or Buy
+									<div class="modalcontent" id="storeslist">
+										<div class="storeheading">Listen online for free</div>
+										<table class="storeicons">
+											<tr>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://www.youtube.com/playlist?list=PLRTwzW8P8sJ6qEeW3Weckx8ip92f_NeoN">
+															<img alt="Youtube" title="Youtube" src="images/youtube.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://soundcloud.com/bienwolf/sets/blasphemy-alley">
+															<img alt="Soundcloud" title="Soundcloud" src="images/soundcloud.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="http://bienwolf.bandcamp.com/album/blasphemy-alley">
+															<img alt="Bandcamp" title="Bandcamp" src="images/bandcamp.png">
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+										<div class="storeheading">Listen, Share, Download, Buy</div>
+										<table class="storeicons">
+											<tr>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://www.saavn.com/s/album/english/Blasphemy-Alley-2018/AjMfMRaLBck_">
+															<img alt="Saavn" title="Saavn" src="images/stores/saavn.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://www.oklisten.com/album/blasphemy_alley?albumId=5ba66a2d-d6c0-469d-9a4c-169c0af4fd84">
+															<img alt="OK Listen" title="OK Listen" src="images/stores/oklisten.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://music.youtube.com/playlist?list=OLAK5uy_kzE5F2QXKJWZrAP67UaJ_AF7Qhb3qAAZQ">
+															<img alt="Youtube Music" title="Youtube Music" src="images/stores/youtubemusic.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://www.deezer.com/us/album/72885532">
+															<img alt="Deezer" title="Deezer" src="images/stores/deezer.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://us.napster.com/artist/bienwolf/album/blasphemy-alley">
+															<img alt="Napster" title="Napster" src="images/stores/napster.png">
+														</a>
+													</div>
+												</td>
+											</tr>
+											
+											<tr>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://www.iheart.com/artist/bienwolf-32435373/albums/blasphemy-alley-61805128/">
+															<img alt="iHeartRadio" title="iHeartRadio" src="images/stores/iheart.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://play.anghami.com/album/5054058">
+															<img alt="Anghami" title="Anghami" src="images/stores/anghami.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://www.kkbox.com/sg/en/album/GV.Ym744zuXEP0F2N4IK009H-index.html">
+															<img alt="KKBox" title="KKBox" src="images/stores/kkbox.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://music.yandex.ru/album/5746633">
+															<img alt="Yandex" title="Yandex" src="images/stores/yandex.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="http://www.mndigital.com/content-experience/music_content/albums/441368579/Bienwolf/Blasphemy_Alley/">
+															<img alt="MediaNet" title="MediaNet" src="images/stores/medianet.png">
+														</a>
+													</div>
+												</td>
+											</tr>
+											
+											<tr>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://listen.tidal.com/album/94905743">
+															<img alt="Tidal" title="Tidal" src="images/stores/tidal.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://www.7digital.com/artist/bienwolf/release/blasphemy-alley-8394088">
+															<img alt="7Digital" title="7Digital" src="images/stores/7digital.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="http://www.boomplaymusic.com/BoomPlayer/#/webitem/musics?cid=1676850">
+															<img alt="Boomplay Music" title="Boomplay Music" src="images/stores/boomplay.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://music.downinthevalley.com/UPC/859728527418/Bienwolf_Blasphemy-Alley">
+															<img alt="Down in the Valley" title="Down in the Valley" src="images/stores/downinthevalley.png">
+														</a>
+													</div>
+												</td>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://shop.therecordexchange.com/UPC/859728527418/Bienwolf_Blasphemy-Alley">
+															<img alt="The Record Exchange" title="The Record Exchange" src="images/stores/therecordexchange.png">
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+										<div class="storeheading">Buy Mp3 and Music CD</div>
+										<table class="storeicons">
+											<tr>
+												<td>
+													<div class="storeiconlink">
+														<a target="_blank" href="https://www.amazon.com/Blasphemy-Alley-Bienwolf/dp/B07H8KLNZ9">
+															<img alt="Amazon" title="Amazon" src="images/stores/amazon.png">
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</div>
+
+								</td>
+								
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="w3-col w3-container rightspace">
+				</div>
+			</div>
+		</div>
+		<div class="fullViewPortContainer footer">
+			<div class="credits">
+				<div class="headtitle">BIENWOLF is:</div>
+				<div class="personnellist">
+					Anshu Anand - Vocals and Keys<br/>
+					Gurashis Singh Deogun - Guitars<br/>
+					Roshan Varghese - Bass<br/>
+					Arpit Daphalapurkar - Drums<br/>
+				</div>
+				<br/>
+				<div class="headtitle">Recorded, Engineered and Mixed by:</div>
+				<div class="personnellist">
+					A. J Eates - <a target="_blank" href="https://www.rhapsodyrecording.in/">Rhapsody Recording, Pune</a><br/>
+					Adwait Walujkar - <a target="_blank" href="http://dawnstudios.in/">Dawn Studios, Pune</a> (Vocals, Keys and Guitars on Descent and Catch 22)<br/>
+					Gurashis Singh Deogun (Simbelmyne)<br/>
+					Simbelmyne vocals recorded at - <a target="_blank" href="http://oakrecordingstudio.com/">Oak Recording Studio, Toronto</a><br/>
+				</div>
+				<br/>
+				<div class="headtitle">Mastered by: </div><div class="personnellist">Joao Carvalho - <a target="_blank" href="http://www.joaocarvalhomastering.com/">Joao Carvalho Mastering, Toronto</a></div><br/>
+				<br/>
+				<div class="headtitle">Album Art Picture: </div><div class="personnellist">Pravjyot Singh Deogun</div><br/>
+				<br/>
+				<div class="headtitle">Album Art Design: </div><div class="personnellist">Gurashis Singh Deogun</div><br/>
+				<br/>
+				<span class="headtitle">All songs written by BIENWOLF</span> <span class="copyright">℗ 2018 Bienwolf</span><br/>
+				<br/>
+				<span class="headtitle">Contact us -</span> <span class="personnellist"><a href="mailto:contactus@bienwolf.com">contactus@bienwolf.com</a></span><br/>
+			</div>
+			<table class="socialicons">
+				<tr>
+					<td>
+						<div class="iconlink">
+							<a title="Facebook" target="_blank" href="https://www.facebook.com/bienwolf">
+								<i class="footericon fa fa-facebook"></i>
+							</a>
+						</div>
+					</td>
+					<td>
+						<div class="iconlink">
+							<a title="Youtube" target="_blank" href="https://www.youtube.com/channel/UCOq2oRBmFvz-HPbNADvHNvg">
+								<i class="footericon fa fa-youtube"></i>
+							</a>
+						</div>
+					</td>
+					<td>
+						<div class="iconlink">
+							<a title="Instagram" target="_blank" href="https://www.instagram.com/bienwolf/">
+								<i class="footericon fa fa-instagram"></i>
+							</a>
+						</div>
+					</td>
+					<td>
+						<div class="iconlink">
+							<a title="Bandcamp" target="_blank" href="https://bienwolf.bandcamp.com/">
+								<i class="footericon fa fa-bandcamp"></i>
+							</a>
+						</div>
+					</td>
+					<td>
+						<div class="iconlink">
+							<a title="Soundcloud" target="_blank" href="https://soundcloud.com/bienwolf/">
+								<i class="footericon fa fa-soundcloud"></i>
+							</a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
+

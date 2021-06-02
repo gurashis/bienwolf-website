@@ -1,0 +1,721 @@
+@font-face {
+	font-family: 'WolfBlack';
+	src: url(../fonts/WolfBlack.ttf) format('truetype')
+}
+
+@font-face {
+	font-family: 'WolfBold';
+	src: url(../fonts/WolfBold.ttf) format('truetype')
+}
+
+@font-face {
+	font-family: 'WolfMedium';
+	src: url(../fonts/WolfMedium.ttf) format('truetype')
+}
+
+@font-face {
+	font-family: 'WolfRegular';
+	src: url(../fonts/WolfRegular.ttf) format('truetype')
+}
+
+@font-face {
+	font-family: 'WolfThin';
+	src: url(../fonts/WolfThin.ttf) format('truetype')
+}
+
+#loading {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: block;
+	z-index: 99
+}
+
+#loading-image {
+	margin-top: 40vh;
+	z-index: 100
+}
+
+body {
+	background-image: url(../images/background-fill.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover
+}
+
+.play {
+	background: url(../files/Play_button.png)
+}
+
+.pause {
+	background: url(../files/Pause_button.png)
+}
+
+.fullViewPortContainer {
+	height: 100vh;
+	width: 100vw;
+	display: table
+}
+
+.albumTitle {
+	font-family: WolfRegular;
+	font-size: 15vw;
+	color: buttonface;
+	display: table-cell;
+	vertical-align: middle;
+	opacity: 0
+}
+
+.tracknamecol {
+	background-color: transparent;
+	padding-left: 8px!important
+}
+
+.tracknamecol div {
+	border: 1px solid white;
+	border-radius: 10px;
+	height: 5vh;
+	cursor: pointer
+}
+
+.tracknamecol div {
+	border: 1px solid white;
+	border-radius: 10px;
+	height: 5vh;
+	cursor: pointer
+}
+
+.tracknamecol div:hover,
+.tracknamecol div:focus {
+	box-shadow: 0 0 5px 3px skyblue
+}
+
+.tracknamecol div.active {
+	box-shadow: 0 0 5px 3px skyblue
+}
+
+.tracknamecol img {
+	width: 5vh
+}
+
+.tracktitle {
+	font-size: 2.5vh;
+	padding-left: 2vh;
+	color: white;
+	font-family: WolfRegular
+}
+
+.lyricsbuttoncol {
+	width: 10vh;
+	background-color: transparent
+}
+
+.lyricsbutton {
+	border-radius: 10px;
+	height: 5vh;
+	background-color: transparent;
+	color: white;
+	font-size: 2vh;
+	border: .3vw solid white;
+	padding-top: .4vh;
+	padding-left: 1.3vh;
+	padding-right: 1.3vh;
+	cursor: pointer;
+	font-family: WolfRegular;
+	font-size: 2.5vh
+}
+
+.lyricsbutton:hover,
+.lyricsbutton:focus {
+	box-shadow: 0 0 5px 3px skyblue
+}
+
+.lyricsbutton.lyricsactive {
+	box-shadow: 0 0 5px 3px skyblue
+}
+
+.modalcontent {
+	display: none
+}
+
+.soundcloudtrackshow {
+	display: block
+}
+
+.soundcloudtrackhide {
+	display: none
+}
+
+.bluegradient {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 128, .7) none repeat scroll 0 0
+}
+
+.midsection {
+	padding-top: 6%
+}
+
+.trackplayer {
+	width: 100%;
+	height: 20vh;
+	border-radius: 30px;
+	border: .5vw solid white
+}
+
+.trackplayer table {
+	margin-top: 1vh
+}
+
+.trackplayer table .titlesection {
+	padding-top: 4vh;
+	padding-left: 6px;
+	width: 85%
+}
+
+.trackplayer table .visualization {
+	padding-top: 10vh
+}
+
+.bandtitle {
+	color: white;
+	font-family: WolfMedium;
+	font-size: 2.5vh
+}
+
+.playingtracktitle {
+	color: white;
+	font-size: 5vh;
+	font-family: WolfThin
+}
+
+.trackplayer table .titlesection hr {
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 80%
+}
+
+.footer {
+	background-color: rgb(0, 0, 64);
+	color: white;
+	font-size: 1.2vw;
+	text-align: center
+}
+
+.footer .credits .headtitle {
+	font-family: WolfBold
+}
+
+.footer .credits .personnellist {
+	display: inline;
+	font-family: WolfRegular
+}
+
+.footer .credits a {
+	color: skyblue;
+	text-decoration: none
+}
+
+.footer .credits .copyright {
+	color: skyblue;
+	text-decoration: none
+}
+
+table.buyalbumtable {
+	width: 100%;
+	border-spacing: .4vh;
+	padding-top: 3vh
+}
+
+.buyonapple {
+	height: 10vh;
+	padding-top: 1vh;
+	padding-left: 1.3vh;
+	padding-right: 1.3vh
+}
+
+.morebuyingoptions {
+	border-radius: 20px;
+	height: 10vh;
+	color: white;
+	border: .3vw solid white;
+	padding-top: 1vh;
+	padding-left: 1.3vh;
+	padding-right: 1.3vh;
+	cursor: pointer;
+	font-family: WolfMedium;
+	font-size: 3vh;
+	text-align: center
+}
+
+.morebuyingoptions:hover,
+.morebuyingoptions:focus {
+	box-shadow: 0 0 5px 3px skyblue
+}
+
+.morebuyingoptions.morebuyingoptionsactive {
+	box-shadow: 0 0 5px 3px skyblue
+}
+
+table.socialicons {
+	width: 25%;
+	margin: 3vh auto auto
+}
+
+table.storeicons {
+	width: 75%;
+	margin: 0 auto auto
+}
+
+table.storeicons tr {
+	height: 12vh
+}
+
+.iconlink {
+	width: 40px;
+	height: 40px;
+	margin: auto
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 5vh;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, .7)
+}
+
+.modal-content {
+	background-color: rgb(0, 0, 64);
+	margin: auto;
+	padding: 10px 20px 20px;
+	border: 1px solid skyblue;
+	width: 40%;
+	max-height: 90vh;
+	overflow: auto;
+	color: white;
+	font-family: WolfRegular
+}
+
+.modal-content div {
+	font-family: WolfMedium;
+	font-size: 4vh;
+	margin-top: 3vh
+}
+
+.modal-content div.storeheading {
+	text-align: center;
+	margin-top: 4vh;
+	font-size: 3vh
+}
+
+.close {
+	color: #fff;
+	float: right;
+	font-size: 28px;
+	font-weight: 700
+}
+
+.modal-content div.storeiconlink {
+	width: 50px;
+	height: 50px;
+	margin: auto
+}
+
+.storeiconlink img {
+	width: 50px;
+	height: 50px;
+	margin: auto
+}
+
+.storeiconlinkprimary {
+	width: 40px;
+	height: 40px;
+	margin: auto
+}
+
+.storeiconlinkprimary img {
+	width: 40px;
+	height: 40px;
+	margin: auto
+}
+
+.iconlink .footericon {
+	font-size: 35px;
+	color: white
+}
+
+@keyframes playtrackanimation {
+	0% {
+		opacity: 1
+	}
+	5% {
+		opacity: .9
+	}
+	10% {
+		opacity: .8
+	}
+	15% {
+		opacity: .7
+	}
+	20% {
+		opacity: .6
+	}
+	25% {
+		opacity: .5
+	}
+	30% {
+		opacity: .4
+	}
+	35% {
+		opacity: .3
+	}
+	40% {
+		opacity: .2
+	}
+	45% {
+		opacity: .1
+	}
+	50% {
+		opacity: 0
+	}
+	55% {
+		opacity: .1
+	}
+	60% {
+		opacity: .2
+	}
+	65% {
+		opacity: .3
+	}
+	70% {
+		opacity: .4
+	}
+	75% {
+		opacity: .5
+	}
+	80% {
+		opacity: .6
+	}
+	85% {
+		opacity: .7
+	}
+	90% {
+		opacity: .8
+	}
+	95% {
+		opacity: .9
+	}
+	100% {
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes playtrackanimation {
+	0% {
+		opacity: 1
+	}
+	5% {
+		opacity: .9
+	}
+	10% {
+		opacity: .8
+	}
+	15% {
+		opacity: .7
+	}
+	20% {
+		opacity: .6
+	}
+	25% {
+		opacity: .5
+	}
+	30% {
+		opacity: .4
+	}
+	35% {
+		opacity: .3
+	}
+	40% {
+		opacity: .2
+	}
+	45% {
+		opacity: .1
+	}
+	50% {
+		opacity: 0
+	}
+	55% {
+		opacity: .1
+	}
+	60% {
+		opacity: .2
+	}
+	65% {
+		opacity: .3
+	}
+	70% {
+		opacity: .4
+	}
+	75% {
+		opacity: .5
+	}
+	80% {
+		opacity: .6
+	}
+	85% {
+		opacity: .7
+	}
+	90% {
+		opacity: .8
+	}
+	95% {
+		opacity: .9
+	}
+	100% {
+		opacity: 1
+	}
+}
+
+.playtracktext {
+	animation-name: playtrackanimation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: playtrackanimation;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite
+}
+
+.close:hover,
+.close:focus {
+	color: skyblue;
+	text-decoration: none;
+	cursor: pointer
+}
+
+@media screen and (max-width:600px) {
+	body:after {
+		content: "";
+		position: fixed;
+		top: 0;
+		height: 100vh;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		background: url(../images/background-fill.jpg) center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover
+	}
+	.albumTitle {
+		font-family: WolfThin
+	}
+	.midsection {
+		width: 100%;
+		padding-top: 3%
+	}
+	.leftspace {
+		width: 0%
+	}
+	.rightspace {
+		width: 0%
+	}
+	.coverart {
+		height: 35vh
+	}
+	.coverartsection {
+		width: 100%;
+		padding: 0
+	}
+	.trackplayersection {
+		width: 100%;
+		padding: 0
+	}
+	.trackplayer {
+		margin-top: 2vh;
+		height: 12vh
+	}
+	.lyricsbutton {
+		padding-top: 1vh
+	}
+	.bandtitle {
+		font-size: 1.5vh
+	}
+	.playingtracktitle {
+		font-size: 4vh
+	}
+	.trackplayer table .titlesection {
+		padding-top: 2vh
+	}
+	.trackplayer table .visualization {
+		padding-top: 5vh
+	}
+	.footer {
+		font-size: 2vh
+	}
+	.footer .credits {
+		margin-top: 7vh;
+		padding-left: 5px;
+		padding-right: 5px
+	}
+	table.buyalbumtable {
+		width: 100%;
+		margin: auto;
+		padding-top: 0
+	}
+	table.socialicons {
+		width: 50%;
+		margin: 3vh auto auto
+	}
+	.modal-content {
+		padding: 20px;
+		border: 1px solid skyblue;
+		width: 80%
+	}
+	.morebuyingoptions {
+		font-size: 2.5vh
+	}
+	.modal-content div.storeheading {
+		font-size: 2vh;
+		margin-top: 3vh
+	}
+	table.storeicons {
+		width: 90%
+	}
+	.storeiconlink {
+		width: 45px;
+		height: 45px;
+		margin: auto
+	}
+	.storeiconlink img {
+		width: 45px;
+		height: 45px;
+		margin: auto
+	}
+	.storeiconlinkprimary {
+		width: 40px;
+		height: 40px;
+		margin: auto
+	}
+	.storeiconlinkprimary img {
+		width: 40px;
+		height: 40px;
+		margin: auto
+	}
+	.iconlink .footericon {
+		font-size: 25px
+	}
+}
+
+@media screen and (min-width:601px) and (max-width:1150px) {
+	body:after {
+		content: "";
+		position: fixed;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		background: url(../images/background-fill.jpg) center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover
+	}
+	.midsection {
+		width: 100%;
+		padding-top: 3%
+	}
+	.leftspace {
+		width: 0%
+	}
+	.rightspace {
+		width: 0%
+	}
+	.coverart {
+		height: 35vh
+	}
+	.coverartsection {
+		width: 100%;
+		padding: 0
+	}
+	.trackplayersection {
+		width: 100%;
+		padding: 0
+	}
+	.trackplayer {
+		margin-top: 2vh;
+		height: 17vh
+	}
+	.trackplayer table .titlesection {
+		padding-left: 8vw
+	}
+	.tracktitle {
+		font-size: 2vh
+	}
+	.lyricsbutton {
+		padding-top: 1vh;
+		font-size: 2vh;
+		padding-left: 2.5vw
+	}
+	.modal-content {
+		padding: 20px;
+		border: 1px solid skyblue;
+		width: 60%
+	}
+	table.buyalbumtable {
+		width: 80%;
+		margin: auto;
+		padding-top: 0
+	}
+	.footer {
+		font-size: 2.2vh
+	}
+	.footer .credits {
+		margin-top: 10%
+	}
+	.morebuyingoptions {
+		font-size: 2.5vh
+	}
+	.modal-content div.storeheading {
+		font-size: 2vh;
+		margin-top: 3vh
+	}
+	table.socialicons {
+		width: 40%
+	}
+	table.storeicons {
+		width: 90%
+	}
+}
+
+@media screen and (min-width:1151px) {
+	.midsection {
+		width: 80%
+	}
+	.leftspace {
+		width: 10%
+	}
+	.rightspace {
+		width: 10%
+	}
+	.coverart {
+		width: 100%
+	}
+	.footer {
+		font-size: 2.2vh
+	}
+	.footer .credits {
+		margin-top: 3%
+	}
+}
